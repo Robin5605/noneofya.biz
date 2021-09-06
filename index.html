@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Noneofya.biz - Link Shortener</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='script.js'></script>
+</head>
+<body class="text-center">
+    <main class="main">
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Enter your URL</h1>
+      
+            <div class="form-floating">
+                <input type="text" class="form-control" id="long">
+                <label for="long">Long URL</label>
+            </div>
+
+            <label for="basic-url" class="form-label">Shortened URL</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">noneofya.biz/</span>
+                <input type="text" class="form-control" id="short" aria-describedby="basic-addon3" readonly>
+            </div>
+            
+            <button class="w-100 btn btn-lg btn-primary" id="copy" type="button">Copy to clipboard</button>
+            <button class="w-100 btn btn-lg btn-primary" id="gen"  type="button">Generate</button>
+            <p class="mt-5 mb-3 text-muted">Designed by Robin</p>
+        </form>
+    </main>
+</body>
+</html>
